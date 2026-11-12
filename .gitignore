@@ -1,3 +1,11 @@
+# Local data files
+/dialogs.csv
+/members.csv
+/test_dataset.csv
+
+# Metabase local database
+/plugins/sample-database.sqlite
+
 #Study materials 
 /Тема 2. Аналитические СУБД. Vertica/
 /Тема 3. Разработка аналитической базы данных/
