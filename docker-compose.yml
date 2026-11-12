@@ -1,6 +1,4 @@
 
-version: '2'
-
 services:
   metabase:
     image: metabase/metabase
@@ -8,6 +6,7 @@ services:
       - "3335:3000"
     volumes:
       - ./plugins/:/plugins
+      - ./data:/data
 
   de-sprint-6:
     image: cr.yandex/crp1r8pht0n0gl25aug1/de-sprint-6:v2024-01-25r2
@@ -18,10 +17,13 @@ services:
     environment:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      VERTICA_PASSWORD: ${VERTICA_PASSWORD}
     volumes:
       - mydb:/var/lib/postgresql
       - mylessons:/lessons
       - ./dags:/lessons/dags
+      - ./data:/data
+
 
 volumes:
   mydb:
