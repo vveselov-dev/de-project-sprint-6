@@ -8,7 +8,11 @@
 
 #Study materials 
 /Тема 2. Аналитические СУБД. Vertica/
-/Тема 3. Разработка аналитической базы данных/
+/Тема 3.  Разработка аналитической базы данных/
+
+# Python cache
+__pycache__/
+*.py[cod]
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -142,5 +146,4 @@ dmypy.json
 
 # macOS
 .DS_Store
-dags
 .vscode/settings.json
