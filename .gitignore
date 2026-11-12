@@ -2,6 +2,7 @@
 /dialogs.csv
 /members.csv
 /test_dataset.csv
+/data/
 
 # Metabase local database
 /plugins/sample-database.sqlite
